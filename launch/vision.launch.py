@@ -27,6 +27,17 @@ def generate_launch_description():
         name='multi_armor_vision_node'
     )
     
+    multi_armor_vision_node1 = Node(
+        package='player_pkg',
+        executable='multi_armor_vision_node1',                       
+        name='multi_armor_vision_node1'
+    )
+    
+    race_stage_subscriber_node = Node(
+        package='player_pkg',
+        executable='race_stage_subscriber',
+        name='race_stage_subscriber_node'
+    )
     return LaunchDescription([
         sphere_vision_node,
         rec_vision_node,

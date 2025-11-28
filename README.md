@@ -22,11 +22,11 @@ RMVA/
 │ ├── vision.launch # 启动视觉节点 
  
 ├── src/ 
-
-│ ├── sphere_vision_node.cpp # 球形识别主程序 
-│ ├── rec_vision_node.cpp # 矩形识别主程序 
-│ ├── armor_vision_node.cpp # 装甲板识别主程序 
-│ ├── multi_armor_vision_node.cpp # 多目标装甲板识别主程序
+│ ├── sphere_vision.cpp # 球形识别主程序 
+│ ├── rec_vision.cpp # 矩形识别主程序 
+│ ├── armor_node.cpp # 装甲板识别主程序 
+│ ├── multi_armor_vision_node.cpp # 多目标装甲板识别主程序(方案1)
+| ├── multi_armor_vision_node1.cpp # 多目标装甲板识别主程序(方案2)
 │ ├── shooter_node.cpp # 弹丸击打控制程序 
 | |__ race_stage_subscriber.cpp #比赛阶段切换订阅者
 
