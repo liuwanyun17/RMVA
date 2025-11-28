@@ -1,0 +1,43 @@
+[0.000000] (-) TimerEvent: {}
+[0.000457] (player_pkg) JobQueued: {'identifier': 'player_pkg', 'dependencies': OrderedDict()}
+[0.000489] (player_pkg) JobStarted: {'identifier': 'player_pkg'}
+[0.006543] (player_pkg) JobProgress: {'identifier': 'player_pkg', 'progress': 'cmake'}
+[0.007041] (player_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/liuwanyun/Vision_Arena_2025/src/player_pkg', '-DCMAKE_INSTALL_PREFIX=/home/liuwanyun/Vision_Arena_2025/src/player_pkg/install/player_pkg'], 'cwd': '/home/liuwanyun/Vision_Arena_2025/src/player_pkg/build/player_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'liuwanyun'), ('LC_TIME', 'zh_CN.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/liuwanyun'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2314'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e5c3df9a6706c9c0831e1498692262bf'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/liuwanyun/Vision_Arena_2025/src/player_pkg/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'liuwanyun'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/path/to/opencv4.5.5/lib/pkgconfig:'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'liuwanyun'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/LWY:@/tmp/.ICE-unix/2314,unix/LWY:/tmp/.ICE-unix/2314'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7d18b46f_104f_4e67_859c_cb868e5265e1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.125'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/liuwanyun/Vision_Arena_2025/src/player_pkg/build/player_pkg'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=e5c3df9a6706c9c0831e1498692262bf'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/liuwanyun/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.033957] (player_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099791] (-) TimerEvent: {}
+[0.156925] (player_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199987] (-) TimerEvent: {}
+[0.201615] (player_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.205210] (player_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.211734] (player_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.219186] (player_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.229435] (player_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.266892] (player_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.268484] (player_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.301045] (-) TimerEvent: {}
+[0.373779] (player_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.401283] (-) TimerEvent: {}
+[0.428833] (player_pkg) StdoutLine: {'line': b'-- Found gazebo_msgs: 3.9.0 (/opt/ros/humble/share/gazebo_msgs/cmake)\n'}
+[0.501383] (-) TimerEvent: {}
+[0.512175] (player_pkg) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_package):\n'}
+[0.512321] (player_pkg) StderrLine: {'line': b'  By not providing "Findpose_msg.cmake" in CMAKE_MODULE_PATH this project has\n'}
+[0.512367] (player_pkg) StderrLine: {'line': b'  asked CMake to find a package configuration file provided by "pose_msg",\n'}
+[0.512961] (player_pkg) StderrLine: {'line': b'  but CMake did not find one.\n'}
+[0.513216] (player_pkg) StderrLine: {'line': b'\n'}
+[0.513268] (player_pkg) StderrLine: {'line': b'  Could not find a package configuration file provided by "pose_msg" with any\n'}
+[0.513310] (player_pkg) StderrLine: {'line': b'  of the following names:\n'}
+[0.513347] (player_pkg) StderrLine: {'line': b'\n'}
+[0.513381] (player_pkg) StderrLine: {'line': b'    pose_msgConfig.cmake\n'}
+[0.513418] (player_pkg) StderrLine: {'line': b'    pose_msg-config.cmake\n'}
+[0.513454] (player_pkg) StderrLine: {'line': b'\n'}
+[0.513488] (player_pkg) StderrLine: {'line': b'  Add the installation prefix of "pose_msg" to CMAKE_PREFIX_PATH or set\n'}
+[0.513522] (player_pkg) StderrLine: {'line': b'  "pose_msg_DIR" to a directory containing one of the above files.  If\n'}
+[0.513554] (player_pkg) StderrLine: {'line': b'  "pose_msg" provides a separate development package or SDK, be sure it has\n'}
+[0.513586] (player_pkg) StderrLine: {'line': b'  been installed.\n'}
+[0.513618] (player_pkg) StderrLine: {'line': b'\n'}
+[0.513657] (player_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.513685] (player_pkg) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.513720] (player_pkg) StdoutLine: {'line': b'See also "/home/liuwanyun/Vision_Arena_2025/src/player_pkg/build/player_pkg/CMakeFiles/CMakeOutput.log".\n'}
+[0.519086] (player_pkg) CommandEnded: {'returncode': 1}
+[0.541546] (player_pkg) JobEnded: {'identifier': 'player_pkg', 'rc': 1}
+[0.552021] (-) EventReactorShutdown: {}
