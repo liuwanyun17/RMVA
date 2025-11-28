@@ -1,2 +1,0 @@
-Invoking command in '/home/liuwanyun/Vision_Arena_2025/src/player_pkg/build/player_pkg': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/liuwanyun/Vision_Arena_2025/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/liuwanyun/Vision_Arena_2025/src/player_pkg/install/player_pkg
-Invoked command in '/home/liuwanyun/Vision_Arena_2025/src/player_pkg/build/player_pkg' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/liuwanyun/Vision_Arena_2025/src/player_pkg -DCMAKE_INSTALL_PREFIX=/home/liuwanyun/Vision_Arena_2025/src/player_pkg/install/player_pkg
