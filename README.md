@@ -4,7 +4,7 @@
 ## 技术报告
 https://www.yuque.com/bayuequ/wx1zx0/dmpee04s2few3so0?singleDoc# 《技术报告》
 
-##文件结构
+## 文件结构
 zzll/ 
 ├── CMakeLists.txt 
 ├── package.xml 
@@ -30,28 +30,29 @@ target_model_pkg
 ##算法原理（含运行指令）
 gazebo
 
-##运行摄像头仿真
+## 运行摄像头仿真
 ros2 launch camera_sim_pkg camera.launch.py
 
-##开启装甲板（模型这里统一用装甲板代替）
+## 开启装甲板（模型这里统一用装甲板代替）
+
 ros2 launch target_model_pkg target_action.launch.py model:=src/target_model_pkg/urdf/armor/armor_1.sdf model_name:=armor_red_1
 ros2 launch target_model_pkg target_action.launch.py model:=src/target_model_pkg/urdf/armor/armor_2.sdf model_name:=armor_red_2
 具体打开的模型根据识别内容需要
 
-##修改朝向和位置，使装甲板正面朝摄像头且摄像头能够识别完整的装甲板（y一般改成7.0就可以）（这个可以位置和朝向双修改，效果比较好）
-##ros2 topic pub /pose geometry_msgs/msg/Pose "{position: {x: 1.0, y: 7.0, z: 0.5}, orientation: {x: 0.0, y: 0.0, z: -0.7071, w: 0.7071}}"
+## 修改朝向和位置，使装甲板正面朝摄像头且摄像头能够识别完整的装甲板（y一般改成7.0就可以）（这个可以位置和朝向双修改，效果比较好）
+## ros2 topic pub /pose geometry_msgs/msg/Pose "{position: {x: 1.0, y: 7.0, z: 0.5}, orientation: {x: 0.0, y: 0.0, z: -0.7071, w: 0.7071}}"
 然后旋转通过改变data后面的数字实现不同状态的旋转进行动态识别
-##ros2 topic pub /type std_msgs/msg/Int32 "{data: 1}"
+## ros2 topic pub /type std_msgs/msg/Int32 "{data: 1}"
 
 运行
-#球形识别
+# 球形识别
 ros2 run player_pkg sphere_vision_node
-#矩形识别
+# 矩形识别
 ros2 run player_pkg rec_vision_node
-#装甲板识别
+# 装甲板识别
 ros2 run player_pkg armor_vision_node
-#多目标装甲板识别
+# 多目标装甲板识别
 ros2 run player_pkg multi_armor_vision_node
-#弹丸击打程序
+# 弹丸击打程序
 ros2 run player_pkg armor_shooter_node
 
