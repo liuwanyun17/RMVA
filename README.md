@@ -28,6 +28,7 @@ zzll/
 ## 依赖项
 player_pkg
 target_model_pkg
+referee_pkg
 
 ## 算法原理（含运行指令）
 
