@@ -30,7 +30,7 @@ player_pkg
 target_model_pkg
 
 ## 算法原理（含运行指令）
-gazebo
+## 打开gazebo
 
 ## 运行摄像头仿真
 ```bash
