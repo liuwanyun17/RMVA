@@ -1,6 +1,9 @@
 # RMVA
 视觉校内赛小组仓库
 
+## 技术报告
+https://www.yuque.com/bayuequ/wx1zx0/dmpee04s2few3so0?singleDoc# 《技术报告》
+
 ## 使用说明
 通过摄像头在Gazebo的仿真世界进行识别，装甲板中心数字排序，弹丸击打等过程
 
