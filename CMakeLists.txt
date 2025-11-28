@@ -70,6 +70,17 @@ ament_target_dependencies(armor_shooter_node
   referee_pkg
 )
 
+add_executable(multi_armor_vision_node1 src/multi_armor_vision_node1.cpp)
+ament_target_dependencies(multi_armor_vision_node1
+  rclcpp
+  std_msgs
+  OpenCV 
+  geometry_msgs
+  cv_bridge
+  pose_msg
+  referee_pkg
+)
+
 add_executable(race_stage_subscriber src/race_stage_subscriber.cpp)
 ament_target_dependencies(race_stage_subscriber
   rclcpp
@@ -80,7 +91,7 @@ ament_target_dependencies(race_stage_subscriber
 
 # 安装可执行文件
 install(TARGETS sphere_vision_node rec_vision_node armor_vision_node multi_armor_vision_node armor_shooter_node
-race_stage_subscriber
+race_stage_subscriber multi_armor_vision_node1
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -93,6 +104,7 @@ target_link_libraries(sphere_vision_node ${OpenCV_LIBS})
 target_link_libraries(rec_vision_node ${OpenCV_LIBS})
 target_link_libraries(armor_vision_node ${OpenCV_LIBS})
 target_link_libraries(multi_armor_vision_node ${OpenCV_LIBS})
+target_link_libraries(multi_armor_vision_node1 ${OpenCV_LIBS})
 
 
 # 为Vision_test添加消息类型支持（新方法）
@@ -101,6 +113,7 @@ target_link_libraries(rec_vision_node${typesupport_target})
 target_link_libraries(armor_vision_node${typesupport_target})
 target_link_libraries(multi_armor_vision_node${typesupport_target})
 target_link_libraries(armor_shooter_node${typesupport_target})
+target_link_libraries(multi_armor_vision_node1${typesupport_target})
 
 # 包含OpenCV头文件
 include_directories(${OpenCV_INCLUDE_DIRS})
