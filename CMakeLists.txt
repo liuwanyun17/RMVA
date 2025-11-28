@@ -69,8 +69,18 @@ ament_target_dependencies(armor_shooter_node
   pose_msg
   referee_pkg
 )
+
+add_executable(race_stage_subscriber src/race_stage_subscriber.cpp)
+ament_target_dependencies(race_stage_subscriber
+  rclcpp
+  std_msgs
+  geometry_msgs
+  referee_pkg
+)
+
 # 安装可执行文件
 install(TARGETS sphere_vision_node rec_vision_node armor_vision_node multi_armor_vision_node armor_shooter_node
+race_stage_subscriber
   DESTINATION lib/${PROJECT_NAME}
 )
 
@@ -83,6 +93,7 @@ target_link_libraries(sphere_vision_node ${OpenCV_LIBS})
 target_link_libraries(rec_vision_node ${OpenCV_LIBS})
 target_link_libraries(armor_vision_node ${OpenCV_LIBS})
 target_link_libraries(multi_armor_vision_node ${OpenCV_LIBS})
+
 
 # 为Vision_test添加消息类型支持（新方法）
 target_link_libraries(sphere_vision_node ${typesupport_target})
